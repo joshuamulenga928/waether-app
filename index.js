@@ -46,8 +46,10 @@ async function getWeatherData(cityValue) {
   } catch (error) {
     weatherDataEl.querySelector(".icon").innerHTML = "";
     weatherDataEl.querySelector(".temperature").textContent = "";
-    weatherDataEl.querySelector(".description").textContent =
-      "An error occurred please enter the correct name or try again later";
+    weatherDataEl.querySelector(".description").textContent = alert(
+      "An error occurred please enter the correct name or try again later"
+    );
+
     weatherDataEl.querySelector(".details").innerHTML = "";
   }
 }
